@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ex3</title>
+    <link rel="stylesheet" href="estilos/ex3.css">
+  </head>
+  <body>
+    <h1>Formulário</h1>
+    <form>
+    <fieldset>
+      <legend>Dados pessoais</legend>
+      <label for="nome">Nome: </label>
+      <input type="text" id="nome" /><br>
+      <label for="end">Endereço: </label>
+      <input type="text" id="end" /><br>
+      <label for="cid">Cidade: </label>
+      <input type="text" id="cid" /><br>
+      <label for="estado">Estado: </label>
+      <select id="estado">
+        <option>São Paulo</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <legend>Dados profissionais</legend>
+      <label>Natureza do Cargo</label><br>
+      <input type="radio" id="gerencia" name="natureza"/>
+      <label for="gerencia">Gerência </label>
+      <input type="radio" id="financeiro" name="natureza"/>
+      <label for="financeiro">Financeiro </label>
+      <input type="radio" id="recepcao" name="natureza"/>
+      <label for="recepcao">Recepção </label>
+      <input type="radio" id="adm" name="natureza"/>
+      <label for="adm">Administrativo </label>
+      <input type="radio" id="juridico" name="natureza"/>
+      <label for="juridico">Juridico </label>
+      <br>
+      <label>Área de interesse</label><br>
+      <input type="checkbox" id="comput" />
+      <label for="comput">Computação </label>
+      <input type="checkbox" id="biologia" />
+      <label for="biologia">Biologia </label>
+      <input type="checkbox" id="meio" />
+      <label for="meio">Meio Ambiente </label>
+      <input type="checkbox" id="engen" />
+      <label for="engen">Engenharia </label>
+      <input type="checkbox" id="historia" />
+      <label for="historia">História </label>
+      <br>
+      <label for="mini">Mini-curriculo</label>
+      <textarea id="mini"></textarea>
+
+      <br>
+    </fieldset>
+      <input type="submit" value="Enviar"/>
+      <input type="reset" value="Limpar"/>
+  </form>
+  </body>
+</html>

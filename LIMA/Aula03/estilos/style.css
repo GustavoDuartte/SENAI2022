@@ -1,0 +1,13 @@
+fieldset{
+  width: 200px;
+}
+.genero{
+  width: 350px;
+}
+label{
+  font-size: 18px;
+}
+body{
+  letter-spacing: 1px;
+  line-height: 45px;
+}

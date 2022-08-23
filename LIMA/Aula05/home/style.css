@@ -1,0 +1,9 @@
+p {
+  color: white;
+  background-color: grey;
+  border: 1px solid white;
+}
+body {
+  background-image: url("../assets/image.jpg");
+  background-size: cover;
+}
