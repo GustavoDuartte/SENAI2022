@@ -1,0 +1,101 @@
+p, li{
+    color: red;
+    width: 500px;
+  }
+tr{
+    text-align: center; 
+}
+html {font-size: 10px;
+    font-family: "helvetica neue";
+}
+h1 {
+    font-size: 50px;
+    text-align: center;
+    margin: 0;
+  padding: 25px 0;
+  color: #000000;
+  text-shadow: 2px 2px 1px rgb(0, 0, 0);
+}
+p, li {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+h2 {
+    font-size: 50px;
+    text-align: center;
+    margin: 0;
+  padding: 25px 0;
+  color: #000000;
+  text-shadow: 2px 2px 1px rgb(7, 7, 7);
+}
+caption {
+    font-family: 'Rock Salt', cursive;
+    padding: 20px;
+    font-style: italic;
+    caption-side: bottom;
+    color: #666;
+    text-align: right;
+    letter-spacing: 1px;
+  }
+
+
+table{ 
+    border-color: black;    
+}
+thead th, tfoot th {
+    font-family: 'Rock Salt', cursive;
+  }
+  
+  th {
+    letter-spacing: 2px;
+  }
+  
+  td {
+    letter-spacing: 1px;
+  }
+  
+  tbody td {
+    text-align: center;
+  }
+  
+  tfoot th {
+    text-align: right;
+  }
+
+table{
+    font-size: 30px;
+    padding-left: 80px;
+    table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid;
+}
+thead th:nth-child(1) {
+    width: 30%;
+  }  
+thead th:nth-child(2) {
+    width: 20%;
+  }  
+thead th:nth-child(3) {
+    width: 15%;
+  }  
+thead th:nth-child(4) {
+    width: 35%;
+  }  
+th, td {
+    padding: 20px;
+  }
+li {
+    font-size: 20px;
+}
+body {
+    width: 600px;
+    margin: 0 auto;
+    padding: 0 20px 20px 20px;
+    border: 7px solid black;
+}
+img {
+    display: block;
+  margin: 0 auto;
+}
