@@ -14,9 +14,9 @@ int main(){
 	excesso = peso - 50;
 	multa = excesso * 4;
 	
-	printf("O peso em kilos da pesca foi: %.2f\no excesso de peso é de: %.2f\na multa em reais para cada kilo excedente é de: R$%.2f",peso,excesso,multa);
+	printf("O peso em kilos da pesca foi: %.2f\no excesso de peso e de: %.2f\na multa em reais para cada kilo excedente e de: R$%.2f",peso,excesso,multa);
 	}else{
-		printf("O peso %.2f é menor doque 50 kilos, então, não havera multa.",peso);
+		printf("O peso %.2f e menor doque 50 kilos, entao, nao havera multa.",peso);
 	}
 
 }

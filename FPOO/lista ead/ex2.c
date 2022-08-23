@@ -6,10 +6,10 @@ int main(){
 	
 	float salb, sall, ir, inss, sind, hrsd, salhr, desc;
 	
-	printf("Digite quanto você ganha por hora: ");
+	printf("Digite quanto voce ganha por hora: ");
 	scanf("%f",&salhr);
 	
-	printf("Digite quantas horas você trabalha por mês: ");
+	printf("Digite quantas horas voce trabalha por mes: ");
 	scanf("%f",&hrsd);
 	
 	salb = salhr * hrsd;

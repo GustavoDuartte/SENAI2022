@@ -6,7 +6,7 @@ void main(){
 	
 	float area, lata, galao, plata, pgalao, cobert = 6;
 	
-	printf("Dig?te o tamanho em metros quadrados (m?) da ?rea ? ser pintada : ");
+	printf("Digite o tamanho em metros quadrados da area a ser pintada : ");
 	scanf("%f", &area);
 	
 	lata = area / (18 * cobert);
@@ -15,6 +15,6 @@ void main(){
 	plata = lata * 80;
 	pgalao = galao * 25; 
 	
-	printf(" Quantidade de latas (18L/lata) : %.2f. Pre?o : R$ %.2f.\nQuantidade de gal?es (3,6L/gal?o) : %.2f . Pre?o : R$ %.2f. ", lata, plata, galao, pgalao);
+	printf("Quantidade de latas (18L/lata) : %.2f. Preco : R$ %.2f.\nQuantidade de galoes (3,6L/galao) : %.2f . Preco : R$ %.2f. ", lata, plata, galao, pgalao);
 	
 }
