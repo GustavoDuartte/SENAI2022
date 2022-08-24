@@ -5,9 +5,9 @@ int main(){
 	setlocale(LC_ALL,"");
 	
 	int i, j, aux;
-	int vet[5];
+	int vet[6];
 	
-	for (i = 1; i <= 5; i++){
+	for (i = 1; i <= 5; i++){ 
 		printf("Digite o %do. numero: ",i);
 		scanf("%d",&vet[i]);
 	}
