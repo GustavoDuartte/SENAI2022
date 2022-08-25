@@ -4,10 +4,10 @@
 void main(){
 	setlocale(LC_ALL, "Portuguese");
 
-	int vet[10], i, somaPar=0, somaImpar = 0, mediaPar = 0, mediaImpar = 0, contPar = 0 , contImpar = 0;
+	int vet[10], i, somaPar=0, somaImpar = 0, contPar = 0 , contImpar = 0;
 	
 	for(i = 1; i < 11; i++ ){
-		printf("Digite o %do. valor: ",i);
+		printf("Digite o %do. valor par ou impar: ",i);
 		scanf("%d", &vet[i]);
 	}
 	for(i = 1; i < 11; i++ ){
@@ -26,4 +26,6 @@ void main(){
 	printf("\nO total de numeros Pares: { %d }\n", contPar );
 	printf("\nO total de numeros Impares: { %d }\n",contImpar );
 	
+	return
+	 0;
 }
