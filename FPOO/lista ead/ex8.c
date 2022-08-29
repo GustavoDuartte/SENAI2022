@@ -5,12 +5,9 @@ int main(){
 	setlocale(LC_ALL,"");
 	
 	int i;
-	float preco;
+	float preco = 1.99;
 	
-	printf("Preço do pão: ");
-	scanf("%f",&preco);
-	
-	printf("Panificadora Pão de Ontem - Tabela de preços\n");
+	printf("Lojas Quase Dois - Tabela de preços\n");
 	
 	for (i = 1; i <= 50; i++){
 		printf("%d - R$ %.2f\n",i,preco*i);

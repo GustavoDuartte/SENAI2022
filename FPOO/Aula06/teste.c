@@ -1,22 +1,56 @@
 #include <stdio.h>
 #include <locale.h>
 
-void main(){
-	setlocale(LC_ALL, "Portuguese");
+int main(){
+	setlocale(LC_ALL,"");
 	
-	int i, nums[6];
+	int opc[5],result,i;
 	
-	for(i = 0; i < 6; i++){
-		printf("Digite o %do. valor : ", i+1);
-		scanf("%d", &nums[i]);
+	opc[1] = -1;
+	opc[2] = -1;
+	opc[3] = -1;
+	opc[4] = -1;
+	opc[5] = -1;
+	
+	printf("1 - SIM / 0 - NÃO\n");
+	
+	while(opc[1] < 0 || opc[1] > 1){
+		printf("Telefonou para a vitima? : ");
+		scanf("%d",&opc[1]);
+	}
+	while(opc[2] < 0 || opc[2] > 1){
+		printf("Esteve no local do crime? : ");
+		scanf("%d",&opc[2]);
+	}
+	while(opc[3] < 0 || opc[3] > 1){
+		printf("Mora perto da vitima? : ");
+		scanf("%d",&opc[3]);
+	}
+	while(opc[4] < 0 || opc[4] > 1){
+		printf("Devia para a vitima? : ");
+		scanf("%d",&opc[4]);
+	}
+	while(opc[5] < 0 || opc[5] > 1){
+		printf("Ja trabalhou com a vitima? : ");
+		scanf("%d",&opc[5]);
 	}
 	
-	for(i = 7; i >= 0; i--){
-	 printf("{%d}\n",nums[i]);
+	while(i <= 5){
+		result = result + opc[i];
+		i++;
 	}
 	
-		
+	printf("---------CONCLUSÃO---------\n");
 	
+	if(result == 2){
+		printf("SUSPEITO\n");
+	}else if(result == 3 || result == 4){
+		printf("CUMPLICE\n");
+	}else if(result == 5){
+		printf("ASSASSINO\n");
+	}else{
+		printf("LIBERADO\n");
+	}
+	printf("%d",result);
 	
-}
-
+	}
