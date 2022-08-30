@@ -6,18 +6,28 @@
 int main(){
 	setlocale(LC_ALL,"");
 	
-	int aux, i, val[10];
+	int aux, i, j, val[10];
 	
 	for( i = 0; i < 10; i++){
-		printf("Digite o %do. valor: ",i);
+		printf("Digite o %do. valor: ",i+1);
 		scanf("%d",&val[i]);
 	}
-		
-	for( i = 0; i < 10; i+=2){
-		aux = val[i];
-		val[i] = val[9-i];
-		val[9-i] = aux;
+	
+	for (i = 0; i < 9; i++){
+		for (j = i+1; j <10; j++){
+			if(val[i]>val[j]){
+				aux = val[i];
+				val[i] = val[j];
+				val[j] = aux;
+			}
+		}
 	}
+//		
+//	for( i = 0; i < 10; i++){
+//		aux = val[i];
+//		val[i] = val[0+i];
+//		val[0+i] = aux;
+//	}
 	
 	for(i = 0; i < 10; i++){
 		printf("{ %d }",val[i]);
