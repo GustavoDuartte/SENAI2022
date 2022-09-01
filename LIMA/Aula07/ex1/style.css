@@ -1,0 +1,40 @@
+.figuras {
+  width: 50vw;
+  height: 50vh;
+  margin: 30px;
+  border: 2px solid purple;
+  position: relative;
+}
+#figura1 {
+  width: 50vw;
+  height: 11vh;
+  border: 1px solid pink;
+  background-color: pink;
+  position: absolute;
+}
+#figura2 {
+  top: 109px;
+  width: 10vw;
+  height: 30vh;
+  border: 1px solid orange;
+  background-color: orange;
+  position: absolute;
+}
+#figura3 {
+  top: 109px;
+  right: 0px;
+  width: 40vw;
+  height: 30vh;
+  border: 1px solid green;
+  background-color: green;
+  position: absolute;
+}
+#figura4 {
+  bottom: 0px;
+  right: 0px;
+  width: 50vw;
+  height: 10vh;
+  border: 1px solid gold;
+  background-color: yellow;
+  position: absolute;
+}
