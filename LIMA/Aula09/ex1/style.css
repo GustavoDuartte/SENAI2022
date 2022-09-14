@@ -70,3 +70,12 @@ input {
 h2 {
   font-size: 25px;
 }
+.menu-superior-direito:hover {
+  cursor: pointer;
+}
+.menu-superior-esquerdo:hover {
+  cursor: pointer;
+}
+#menu-inferior > h1:hover {
+  cursor: pointer;
+}
