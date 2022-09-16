@@ -20,24 +20,20 @@ void main()
 		}
 		printf("\n");
 	}
-
-	i=3;
 	for(j = 0; j < 5; j++){
-		if(maio4 < m[i][j]){
-			maio4 = m[i][j];
+		if(maio4 < m[4][j]){
+			maio4 = m[4][j];
 			
-    	}if(meno4 > m[i][j]){
-			meno4 = m[i][j];	
+    	}if(meno4 > m[4][j]){
+			meno4 = m[4][j];	
     	}
 	}
-	
-	j=2;
 	for(i = 0; i < 5; i++){
-		if(maio3 < m[i][j]){
-			maio3 = m[i][j];
+		if(maio3 < m[i][3]){
+			maio3 = m[i][3];
 			
-    	}if(meno3 > m[i][j]){
-			meno3 = m[i][j];	
+    	}if(meno3 > m[i][3]){
+			meno3 = m[i][3];	
     	}
 	}
 	

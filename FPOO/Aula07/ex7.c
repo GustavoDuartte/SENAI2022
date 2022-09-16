@@ -5,7 +5,7 @@ void main()
 {
     setlocale(LC_ALL, "Portuguese");
 
-    int i,j,m[3][3],v=0;
+    int i,j,m[3][3],v=0,posi,posj;
     srand(time(NULL));
     
     for(i = 0; i < 3; i++){
@@ -17,7 +17,9 @@ void main()
 	for(i = 0; i <3; i++){
         for(j = 0; j <3; j++){
             if(v < m[i][j]){
-            	v = m[i][j];	
+            	v = m[i][j];
+				posi=i;
+				posj=j;	
             }
         }
     }
@@ -29,5 +31,6 @@ void main()
 		printf("\n");
 	}
 	printf("\nO maior numero gerado é: %d",v);
+	printf("\nA linha do numero é: %d, e a coluna é: %d",posi+1,posj+1);
     
 }
