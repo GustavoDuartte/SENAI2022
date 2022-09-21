@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<stdbool.h>
+#include<locale.h>
 
 void numero(int dec){
 	int num;
@@ -12,7 +13,6 @@ void numero(int dec){
 	}else{
 		printf("%d",dec%2);
 	}
-	
 }
 
 int main(){
