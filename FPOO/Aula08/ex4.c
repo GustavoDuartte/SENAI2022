@@ -3,30 +3,27 @@
 #include<stdbool.h>
 #include<locale.h>
 
-void numero(int maior){
-	int num1, num2;
+void numero(int num, int num2){
 	
-	if(num1>num2){
-		maior = num1;
-		numero(maior);
-		printf("%d",maior);
+	if(num>num2){
+		printf("%d",num);
 	}else{
-		printf("%d",maior);
+		printf("%d",num2);
 	}
-	
+		
 }
 
 int main(){
-	int num1, num2, maior;
+	int num,num2, maior;
 	
 	printf("Digite um numero: ");
-	scanf("%d",&num1);
+	scanf("%d",&num);
 	
 	printf("Digite outro numero: ");
 	scanf("%d",&num2);
 	
 	printf("O maior numero e: ");
-	numero(maior);
+	numero(num,num2);
 	
 	return 0;
 }
