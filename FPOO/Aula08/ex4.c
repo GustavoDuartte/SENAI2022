@@ -14,7 +14,7 @@ void numero(int num, int num2){
 }
 
 int main(){
-	int num,num2, maior;
+	int num,num2;
 	
 	printf("Digite um numero: ");
 	scanf("%d",&num);
