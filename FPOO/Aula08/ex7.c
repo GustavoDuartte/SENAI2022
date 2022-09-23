@@ -6,9 +6,9 @@ int fatorial(int num){
 	int i;
 	
 	for(i = num-1; i >= 1; i--){
-		return num = num * i;
+		num = num * i;
 	}
-//	return num;
+	return num;
 }
 
 int main(){
