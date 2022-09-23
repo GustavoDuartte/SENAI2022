@@ -4,14 +4,12 @@
 #include<locale.h>
 
 bool numero(int num, int num2){
-	int tf;
 	
 	if(num==num2){
-		tf = 1;
+		return true;
 	}else{
-		tf = 0;
-	}
-	return tf;	
+		return false;
+	}	
 }
 
 int main(){
@@ -23,6 +21,7 @@ int main(){
 	printf("Digite outro numero: ");
 	scanf("%d",&num2);
 	
+	printf("\n");
 	printf("1 = Numeros iguais\n0 = Numeros diferentes\n");
 	printf("%d",numero(num,num2));
 	return 0;
