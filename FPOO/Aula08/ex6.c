@@ -1,29 +1,26 @@
 #include<stdio.h>
-#include<stdlib.h>
 #include<locale.h>
-
+//Fun??o que desenha um ret?ngulo
 void retangulo(int x, int y, char c){
 	int i, j;
-	
 	for(i = 0; i < y; i++){
-		for(j = 0; j < x; j++)
-			printf("%c\n",c);		
+		for(j = 0; j < x; j++){
+			if(i == 0)	printf("%c",c);
+			else if(j == 0)printf("%c",c);
+			else if(j == x - 1)printf("%c",c);
+			else if(i == y - 1)printf("%c",c);
+			else printf(" ");
+		}
 		printf("\n");
 	}
-	
-
 }
-
 int main(){
+	setlocale(LC_ALL,"");
 	int l, a;
 	char c;
-	
-	printf("Digite a largura, altura, e caractere: ");
+	printf("Digite a largura, altura e caracter do ret?ngulo:\n");
 	scanf("%d",&l);
 	scanf("%d",&a);
 	c = getch();
-	
-	retangulo(l,a,c); 
-	
-	return 0;
+	retangulo(l, a, c);
 }
