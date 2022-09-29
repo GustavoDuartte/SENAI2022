@@ -12,8 +12,7 @@ void sorteio(char nomes[10][30]){
 	}
 	num = rand() % 10;
 	
-	printf("O nome sorteado foi %s",nomes[num]);
-	
+	printf("O nome sorteado foi %s",nomes[num]);	
 }
 
 void main(){

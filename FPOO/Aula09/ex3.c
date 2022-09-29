@@ -2,18 +2,18 @@
 #include <locale.h>
 #include <time.h>
 
-void sorteio(char nomes[10][30]){
+void sorteio(char nomes[40][30]){
 	srand(time(NULL));
 	
 	int i, sorteado, num;
 	
-	printf("Digite 10 nomes para sortear : \n");
+	printf("Digite 40 times para sortear: \n");
 	
 	for(i = 0; i < 10; i++){
 		gets(nomes[i]);	
 	}
 	
-	printf("Digite quantos nomes para sortear : ");
+	printf("Digite quantos times cada grupo vai ter: ");
 	scanf("%d", &num);
 	
 	for(i = 0; i < num; i++){

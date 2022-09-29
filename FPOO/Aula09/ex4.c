@@ -3,10 +3,10 @@
 
 int idade(int num){
 	
-	printf("Dig?te o ano de seu nascimento: ");
+	printf("Digite o ano de seu nascimento: ");
 	scanf("%d", &num);
 	
-	printf("Voc? tem %d anos de idade.\n", num = 2022 - num);
+	printf("Voce tem %d anos de idade.\n", num = 2022 - num);
 	
 	return num;
 }
