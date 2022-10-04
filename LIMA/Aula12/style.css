@@ -1,98 +1,66 @@
-*{
-  box-sizing: border-box;
-  padding: 0;
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
   list-style: none;
 }
-#retangulo1{
-  width: 100%;
-  height: 100px;
-  background: rgba(127, 255, 212, 0.822);
+ul > li {
+  float: left;
+}
+nav {
+  width: 100vw;
+  padding: 15px 0;
   display: flex;
-  justify-content: center;
   align-items: center;
-}
-#bola {
-  width: 5vw;
-  height: 5vw;
-}
-#retangulo1 > p{
-  font-size: 25px;
-}
-#retangulo2{
-  /* border: 2px solid black; */
-  height: 1vh;
-  display: flex;
   justify-content: space-between;
-  padding: 50px;
 }
-#retangulo2 > p{
-  padding-left: 300px;
-  padding-right: 300px;
-  font-size: 25px;
-  font-weight: bold;
+img {
+  width: 70px;
+  height: 70px;
 }
-#retangulo3{
-  /* border: 2px solid black; */
-  height: 1vh;
+#imgcont {
+  width: 400px;
+  height: 400px;
+}
+section {
   display: flex;
-  justify-content: space-between;
-  padding: 50px;
+  align-items: center;
+  padding: 30px;
 }
-#retangulo3 > p{
-  padding-left: 315px;
-  padding-right: 230px;
-  font-size: 25px;
-}
-#retangulo4 {
-  display: flex;
-  justify-content: space-between;
+div{
+  width: 60vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
-  left: 8%;
-  top: 31%;
-  width: 28vw;
-  background: rgba(197, 196, 196, 0.712);
-  padding: 13px;
+  top: 0;
+  left: -60vw;
+  /* display: none; */
+  color: white;
+  transition: left .5s;
 }
-#retangulo4 > ul{
-  display: flex;
-  flex-direction: column;
-  font-size: 23px;
-  line-height: 40px;
+#menu{
+  display: none;
 }
-#equip{
-  height: 1vh;
-  display: flex;
-  padding: 50px;
-  padding-top: 300px;
-  padding-left: 370px;
-  font-size: 25px;
+#menu:checked ~ div {
+  left: 0;
 }
-#retangulo5 {
-  display: flex;
-  justify-content: space-between;
-  position: absolute;
-  left: 8%;
-  top: 70%;
-  width: 28vw;
-  background: rgba(197, 196, 196, 0.712);
-  padding: 13px;
+@media (max-width: 700px) {
+  nav > ul,
+  input {
+    display: none;
+  }
+  section {
+    flex-direction: column;
+  }
+  #imgcont {
+    width: 150px;
+    height: 150px;
+  }
 }
-#retangulo5 > ul{
-  display: flex;
-  flex-direction: column;
-  font-size: 23px;
-  line-height: 40px;
-}
-#imag{
-  display: flex;
-  position: absolute;
-  justify-content: space-evenly;
-  top: 35%;
-  left: 20%;
-  padding-left: 500px;
-}
-.imagg{
-  width: 20%;
-  height: 20%;
+@media (min-width: 701px) {
+  #icon {
+    display: none;
+  }
 }
