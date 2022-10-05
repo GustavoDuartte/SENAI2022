@@ -63,7 +63,7 @@ label > img:hover {
   display: flex;
 }
 #menudrop img {
-  padding: 5px;
+  padding: 10px;
 }
 #menudrop > div {
   width: 70px;
@@ -92,7 +92,7 @@ main{
   width: 380px;
   height: 130px;
 }
-main > input{
+main > a > input{
   width: 390px;
   height: 35px;
   font-size: 15px;
@@ -109,16 +109,34 @@ main > input{
   display: flex;
   padding-top: 50px;
 }
-.pages > div{
+.pages > a{
+  text-decoration: none;
+  color: #3e3e3e;
   position: relative;
-  width: 100px;
+  width: 90px;
   height: 100px;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
-  /* padding-right: 20px; */
+  padding-right: 20px;
 }
-.pages > div > img{
+.pages > div{
+  text-decoration: none;
+  color: #3e3e3e;
+  position: relative;
+  width: 90px;
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-right: 20px;
+}
+.pages > a >div> img{
+  padding: 10px;
+}
+.pages > div> img{
   padding: 10px;
 }
 .dots{
@@ -127,17 +145,53 @@ main > input{
   top: 0;
   right: 0;
 }
+.pages > a:hover{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10%;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 90px;
+  height: 100px;
+}
 .pages > div:hover{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   border-radius: 10%;
   background-color: rgba(0, 0, 0, 0.1);
-  width: 100px;
+  width: 90px;
   height: 100px;
 }
 footer{
   position:absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 20px;
+  right: 25px;
+}
+footer > a{
+  text-decoration: none;
+}
+button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 175px;
+  height: 30px;
+  font-size: 12px;
+  background-color: white;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+}
+button:hover{
+  cursor: pointer;
+}
+button > p{
+  padding-left: 15px;
+}
+button > img{
+  width: 15px;
+  height: 15px;
 }
