@@ -80,7 +80,7 @@ label > img:hover {
   width: 70px;
   height: 80px;
 }
-main{
+main {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,7 +91,7 @@ main{
   width: 280px;
   height: 95px;
 }
-main > #sbar{
+main > #sbar {
   display: flex;
   align-items: center;
   width: 550px;
@@ -102,37 +102,29 @@ main > #sbar{
   padding: 20px;
   margin-top: 40px;
 }
-#sbar > img{
+#sbar > img {
   width: 12px;
   height: 12px;
 }
-#sbar > a > #mic{
+#sbar > a > #mic {
   width: 15px;
   height: 15px;
   /* margin-left: 50px; */
 }
-#sbar > a > input{
+#sbar > a > input {
   width: 482px;
   border: none;
   padding-left: 10px;
   font-size: 16px;
 }
-.dots{
-  opacity: 0;
-  position: absolute;
-  top: 6px;
-  right: 2px;
-  transition: .2s;
-  transition-delay: 450ms;
-}
-.pages{
+.pages {
   display: flex;
   padding-top: 20px;
   justify-content: space-evenly;
   width: 300px;
   height: 100px;
 }
-.pages > a{
+.pages > a {
   text-decoration: none;
   color: #3e3e3e;
   position: relative;
@@ -143,7 +135,7 @@ main > #sbar{
   align-items: center;
   justify-content: center;
 }
-.pages > div{
+.pages > div {
   text-decoration: none;
   color: #3e3e3e;
   position: relative;
@@ -154,38 +146,46 @@ main > #sbar{
   align-items: center;
   justify-content: center;
 }
-.pages > a >div> img{
+.pages > a > div > img {
   padding: 10px;
 }
-.pages > div> img{
+.pages > div > img {
   padding: 10px;
 }
-.pages > a:hover{
+.pages > a:hover {
   display: flex;
   border-radius: 4px;
   background-color: rgba(0, 0, 0, 0.1);
   width: 90px;
   height: 100px;
 }
-.pages > div:hover{
+.pages > div:hover {
   display: flex;
   border-radius: 4px;
   background-color: rgba(0, 0, 0, 0.1);
   width: 90px;
   height: 100px;
 }
-.pages > a:hover .dots{
+.dots {
+  opacity: 0;
+  position: absolute;
+  top: 6px;
+  right: 2px;
+  transition: 0.2s;
+  transition-delay: 450ms;
+}
+.pages > a:hover .dots {
   opacity: 1;
 }
-footer{
-  position:absolute;
+footer {
+  position: absolute;
   bottom: 20px;
   right: 25px;
 }
-footer > a{
+footer > a {
   text-decoration: none;
 }
-button{
+button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -197,13 +197,13 @@ button{
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 30px;
 }
-button:hover{
+button:hover {
   cursor: pointer;
 }
-button > p{
+button > p {
   padding-left: 15px;
 }
-button > img{
+button > img {
   width: 15px;
   height: 15px;
 }
